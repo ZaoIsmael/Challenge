@@ -14,6 +14,7 @@ class ExampleTest extends TestCase
     public function testBasicExample()
     {
         $this->visit('/')
-             ->see('Laravel 5');
+            ->see('Haga login para acceder a la aplicación.')
+            ->see('Si no tiene cuenta puede registrarse');
     }
 }

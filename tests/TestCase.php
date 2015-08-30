@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+
 class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
     /**
@@ -21,5 +23,15 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 
         return $app;
+    }
+
+    public function createUser()
+    {
+        return factory(User::class)->create([
+            'name'           => 'Ismael Bermúdez',
+            'email'          => 'ismaelberfer@gmail.com',
+            'password'       => bcrypt('Aa-123456'),
+            'remember_token' => str_random(10),
+        ]);
     }
 }

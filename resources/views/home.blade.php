@@ -14,7 +14,7 @@
                         <p>Haga login para acceder a la aplicación.</p>
                         <p>Si no tiene cuenta puede registrarse</p>
                         @else
-                            Bienvenido a la aplicación {{ Auth::user()->name }}
+                            Bienvenido a la aplicacion {{ Auth::user()->name }}
                         @endif
 
                     </div>
