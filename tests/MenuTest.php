@@ -33,7 +33,7 @@ class MenuTest extends TestCase
 
         $this->actingAs($user)
             ->visit('/')
-            ->see("Bienvenido a la aplicacion " .$user->name)
+            ->see("Bienvenido a la aplicación ". $user->name)
             ->click('Logout')
             ->seePageIs('/')
             ->see('Haga login para acceder a la aplicación.')

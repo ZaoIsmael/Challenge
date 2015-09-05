@@ -11,7 +11,7 @@ namespace tests;
 use TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
-class MenuLoginTest extends TestCase
+class LoginTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -24,7 +24,7 @@ class MenuLoginTest extends TestCase
             ->type('Aa-123456', 'password')
             ->press('Login')
             ->seePageIs('/')
-            ->see("Bienvenido a la aplicacion " .$user->name);
+            ->see("Bienvenido a la aplicación " .$user->name);
     }
 
     public function testLoginUserError()

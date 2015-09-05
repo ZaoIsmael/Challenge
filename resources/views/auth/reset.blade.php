@@ -47,7 +47,7 @@
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
-                                    <button type="submit" class="btn btn-primary">Reset Password</button>
+                                    <button type="submit" class="btn btn-primary">Cambia la contraseña</button>
                                 </div>
                             </div>
                         </form>

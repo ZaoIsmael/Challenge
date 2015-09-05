@@ -11,7 +11,7 @@ namespace tests;
 use TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
-class MenuRegisterTest extends TestCase
+class RegisterTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -24,7 +24,7 @@ class MenuRegisterTest extends TestCase
             ->type('Aa-123456', 'password_confirmation')
             ->press('Registrar')
             ->seePageIs('/')
-            ->see("Bienvenido a la aplicacion test")
+            ->see("Bienvenido a la aplicación test")
             ->click('Logout')
             ->seePageIs('/');
 

@@ -28,7 +28,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     public function createUser()
     {
         return factory(User::class)->create([
-            'name'           => 'Ismael Bermúdez',
+            'name'           => 'Ismael Bermudez',
             'email'          => 'ismaelberfer@gmail.com',
             'password'       => bcrypt('Aa-123456'),
             'remember_token' => str_random(10),
