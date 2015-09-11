@@ -11,11 +11,11 @@ namespace tests;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use TestCase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ResetPasswordTest extends TestCase
 {
-    use DatabaseMigrations;
+    use DatabaseTransactions;
 
     public function testResetPassword()
     {
@@ -45,7 +45,6 @@ class ResetPasswordTest extends TestCase
             ->select('password')
             ->where('email', $user->email)
             ->get();
-
 
         $this->assertTrue(
             Hash::check('newpassword', $user[0]->password),
