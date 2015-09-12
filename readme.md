@@ -1,3 +1,6 @@
+## Challenge built with laravel
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c70c67c2-b5d2-4cf8-8e47-8ac893efc11c/mini.png)](https://insight.sensiolabs.com/projects/c70c67c2-b5d2-4cf8-8e47-8ac893efc11c)
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
